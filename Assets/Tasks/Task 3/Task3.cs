@@ -7,7 +7,8 @@ public class Task3 : MonoBehaviour
     
     private void Start()
     {
-        Instantiate(_wallPrefab);
-        _wallPrefab.GetComponent<Rigidbody>().isKinematic = false;
+        // Создаем новый экземпляр объекта и сохраняем ссылку на него, чтобы работать с новым объектом а не с оригиналом префаба
+        var wall = Instantiate(_wallPrefab);
+        wall.GetComponent<Rigidbody>().isKinematic = false;
     }
 }

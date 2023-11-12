@@ -9,7 +9,7 @@ public class Task1 : MonoBehaviour
     
     private void Start()
     {
-        // Создаем новый экземпляр объекта и сохраняем ссылку на него, чтобы работать с новым объектом а не с оригиналом
+        // Создаем новый экземпляр объекта и сохраняем ссылку на него, чтобы работать с новым объектом а не с оригиналом префаба
         Transform wall = Instantiate(_wallPrefab);
         
         wall.transform.localScale = _tagetScale;

@@ -850,6 +850,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 695342489688569873, guid: 5068b9efb1abc6c45b90b82862e63ac9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7694401691061697413, guid: 5068b9efb1abc6c45b90b82862e63ac9, type: 3}
       propertyPath: m_Name
       value: KinematicWall

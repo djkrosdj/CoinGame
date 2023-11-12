@@ -7,8 +7,9 @@ public class Task4 : MonoBehaviour
     
     private void Start()
     {
-        Instantiate(_shelfPrefab); // Эту строку кода удалять нельзя
-        
-        Destroy(_shelfPrefab);
+        // Создаем новый экземпляр объекта и сохраняем ссылку на него, чтобы работать с новым объектом а не с оригиналом префаба
+        var shelf = Instantiate(_shelfPrefab); // Эту строку кода удалять нельзя
+        // так же необходимо апкастнуть новый объект shelf из компоненты трансформ в гейм объект
+        Destroy(shelf.gameObject);
     }
 }
